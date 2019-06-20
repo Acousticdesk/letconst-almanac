@@ -1,33 +1,46 @@
-.App {
-  text-align: center;
+:root {
+    --almanac-background: #bcb6bb;
+    --almanac-accent: #b9503e;
+    --white: #fff;
+    --black: #222;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue" ,Arial, sans-serif;
+    font-size: 22px;
+    line-height: 48px;
+    background: var(--almanac-background);
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.almanac__header--grays {
+    margin-top: 0;
+    background: var(--almanac-accent);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.almanac__header--sports {
+    color: var(--almanac-accent);
+}
+
+.almanac__header--title {
+    text-shadow: 2px 2px 0 var(--black), 4px 4px 0 var(--black);
+    color: var(--white);
+}
+
+.result:hover {
+    background-color: var(--almanac-accent);
+    color: var(--white);
 }

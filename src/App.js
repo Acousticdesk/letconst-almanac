@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Almanac from './components/Almanac'
 
-export default App;
+import './App.css'
+
+const Grays = () => (
+  <h2 className="almanac__header almanac__header--grays">
+    <span>✩</span>
+    <span>✩</span>
+    <span>✩</span>
+    <span>GRAYS</span>
+    <span>✩</span>
+    <span>✩</span>
+    <span>✩</span>
+  </h2>
+)
+
+const App = () => (
+  <div className="wrapper">
+    <Grays />
+    <h1 className="almanac__header--sports">SPORTS</h1>
+    <h1 className="almanac__header--title">ALMANAC</h1>
+    <h4 className="almanac__header--sports">COMPLETE SPORTS STATISTICS</h4>
+    <Almanac />
+  </div>
+)
+
+export default App
