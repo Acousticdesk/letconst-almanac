@@ -35,6 +35,10 @@ const useGames = () => {
       .catch(() => alert(ERROR_MESSAGE))
   }, [])
 
+  useEffect(() => {
+    document.title = `${games.length} NBA games - GRAYS SPORT ALMANAC`
+  }, [games])
+
   return {games}
 }
 
