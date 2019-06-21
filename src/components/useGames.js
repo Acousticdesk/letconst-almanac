@@ -16,6 +16,7 @@ export default () => {
   }, [])
 
   useEffect(() => {
+    if (!games.length) return
     document.title = `${games.length} NBA games - GRAYS SPORT ALMANAC`
   }, [games])
 
