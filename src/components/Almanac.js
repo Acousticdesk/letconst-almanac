@@ -45,15 +45,12 @@ const useGames = () => {
 const GamesList = ({ games }) => (
   <>
     <h1>1979</h1>
-    {games.map(game => {
-
-      return (
-        <Result
-          key={getGameId(game)}
-          game={game}
-        />
-      )
-    })}
+    {games.map(game => (
+      <Result
+        key={getGameId(game)}
+        game={game}
+      />
+    ))}
   </>
 )
 
